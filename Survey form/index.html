@@ -10,21 +10,61 @@
 
   <div class="main">
 
-    <h1 id="title">Apple fan</h1>
+    <h1 id="title">Apple</h1>
     <p id="description">Thank you for teling us what products are on your interest</p>
 
     <form action="" id="survey-form">
       <div class="form-elem">
-        <label for="name">Your name:</label>
-        <input type="text" id="name" name="name" placeholder="Antonio Radosav">
+        <label for="name" id="name-label">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Antonio Radosav" required>
       </div>
       <div class="form-elem">
-        <label for="email" >Email:</label>
-        <input type="text" id="email" name="email" placeholder="radosav.antonio@gmail.com">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="radosav.antonio@gmail.com" required>
       </div>
       <div class="form-elem"> 
-        <label for="number">Phone number:</label>
-        <input type="text" id="number" name="number" placeholder="07306 533 123">
+        <label for="number" id="number-label">Phone number:</label>
+        <input type="tel" id="number" name="number" placeholder="07306533123" minlength="11" maxlength="11" required>
+      </div>
+      <div class="form-elem"> 
+        <label for="role">What is your urrent role?</label>
+        <select name="role" id="role" required>
+          <option disabled selected option>Select a role</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="employed">Employed</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="check-area"> 
+        <label for="products">What products do you own?</label>
+        <div class="check-form">
+          <input type="checkbox" name="product" id="product" value="iPhone">
+          <label for="product">iPhone</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="product" id="product" value="iPad">
+          <label for="product">iPad</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="product" id="product" value="iPod">
+          <label for="product">iPod</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="product" id="product" value="macbook">
+          <label for="product">Macbook</label>
+        </div>
+        <div class="check-form">
+          <input type="checkbox" name="product" id="product" value="mac">
+          <label for="product">Mac</label>
+        </div>
+      </div>
+      <div class="form-elem"> 
+        <label for="comment">What you like about Apple ecosistem?</label><br>
+        <textarea name="comment" id="textarea" cols="30" rows="10">Write a few details here...</textarea>
+      </div>
+      <div class="form-elem"> 
+        <input type="submit" name="submit" value="Send" id="submit">
       </div>
     </form>
 

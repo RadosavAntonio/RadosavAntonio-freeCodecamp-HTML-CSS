@@ -37,19 +37,52 @@ body {
   border-radius: 5px;
   width: 50%;
   margin: auto;
-  padding: 0 20px 20px 20px;
+  padding: 20px;
 }
 
-label {
-  padding: 5px;
-  padding-top: 20px;
-}
-
-input {
-  /* margin: 5px; */
+.form-elem input {
+  margin: 5px 0;
   width: 100%;
   padding: 5px;
   border-radius: 5px;
   border: none;
-  height: 35px;
+  line-height: 22px;
+}
+
+.form-elem textarea {
+  margin: 5px 0;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  line-height: 22px;
+}
+
+select {
+  margin: 5px 0;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  line-height: 22px;
+}
+
+.form-elem {
+  margin-bottom: 10px;
+}
+
+.form-elem label {
+  margin-bottom: 5px;
+}
+
+.check-form {
+  margin: 5px 0;
+}
+
+.check-area {
+  margin-bottom: 10px;
+}
+
+.form-elem #submit:hover {
+  background-color: #37af65;
 }
