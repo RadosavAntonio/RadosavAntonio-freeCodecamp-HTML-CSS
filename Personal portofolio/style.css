@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  clear:both;
+  overflow:auto;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #be3144;
+  line-height: 40px;
+}
+
+#navbar {
+  float:right;
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+
+
+#logo img {
+  float:left;
+  max-width: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+#nav-link {
+  display: inline-block; 
+  padding:20px;
+  font-size:20px; 
+}
+
+ul li:hover{
+  background-color: #181719;
+  transition:all 0.5s ease-in-out;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #000; */
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
+}
+
+#welcome-section h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+#welcome-section h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  color: #be3144;
+  line-height: 4rem;
+}
+
+#projects {
+  background-color: #be3144;
+  display: flex;
+  flex-direction: row;
+}
+
+#project {
+  flex-basis: 33%;
+  margin: 20px;
+}
+
+#project img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#project-text {
+  background-color: #be3144;
+  text-align: center;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  #projects {
+    flex-direction: column;
+  }
+  #project {
+    flex-basis: 100%;
+  }
+}
